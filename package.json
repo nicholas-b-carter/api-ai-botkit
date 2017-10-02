@@ -11,7 +11,9 @@
     "url": "https://github.com/api-ai/api-ai-botkit/issues"
   },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "snyk-protect": "snyk protect",
+    "prepublish": "npm run snyk-protect"
   },
   "keywords": [
     "apiai",
@@ -23,6 +25,8 @@
     "apiai": "2.0.5",
     "botkit": "0.2.0",
     "html-entities": "^1.2.0",
-    "node-uuid": "^1.4.7"
-  }
+    "node-uuid": "^1.4.7",
+    "snyk": "^1.41.1"
+  },
+  "snyk": true
 }
